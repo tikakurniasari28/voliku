@@ -1,0 +1,67 @@
+/* Home.css */
+
+.home-container {
+  min-height: 75vh;          /* halaman selalu penuh tinggi layar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Judul & sub‑judul */
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  color: #555;
+}
+
+/* Grid menu */
+.home-navGrid {
+  grid-template-columns: 1fr; 
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Jadi fix 2 kolom */
+  max-width: 700px;
+  width: 90%;
+  justify-items: center; /* Optional: buat isi card center */
+}
+
+/* Tombol menu */
+.home-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 900;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  min-height: 200px;     /* tinggi seragam */
+  min-width: 340px;      /* lebar seragam */
+  text-align: center;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Mobile tweaks */
+@media (max-width: 500px) {
+  .home-title      { font-size: 2rem; }
+  .home-subtitle   { font-size: 1rem; }
+}
