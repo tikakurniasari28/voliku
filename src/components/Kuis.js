@@ -27,7 +27,7 @@ const quizTopics = {
     {
       question: "Menahan bola dengan dua tangan dari arah bawah disebut?",
       options: ["Passing", "Servis", "Smash", "Block"],
-      answer: "Block",
+      answer: "Passing",
     },
   ],
   peraturan: [
